@@ -150,3 +150,51 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/phonebook/index.php?r=gii/model/index
 ---
+2018/09/07 20:57:11 [error] [php] Cannot modify header information - headers already sent by (output started at /Library/WebServer/Documents/phonebook/protected/controllers/UserController.php:2) (/Library/WebServer/Documents/yii/framework/web/CHttpRequest.php:803)
+Stack trace:
+#0 /Library/WebServer/Documents/yii/framework/web/auth/CAccessControlFilter.php(180): CWebUser->loginRequired()
+#1 /Library/WebServer/Documents/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied()
+#2 /Library/WebServer/Documents/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter()
+#3 /Library/WebServer/Documents/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#4 /Library/WebServer/Documents/yii/framework/web/filters/CInlineFilter.php(58): UserController->filterAccessControl()
+#5 /Library/WebServer/Documents/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#6 /Library/WebServer/Documents/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /Library/WebServer/Documents/yii/framework/web/CController.php(265): UserController->runActionWithFilters()
+#8 /Library/WebServer/Documents/yii/framework/web/CWebApplication.php(282): UserController->run()
+#9 /Library/WebServer/Documents/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Library/WebServer/Documents/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /Library/WebServer/Documents/phonebook/index.php(13): CWebApplication->run()
+REQUEST_URI=/phonebook/index.php?r=user/create
+in /Library/WebServer/Documents/phonebook/index.php (13)
+2018/09/07 20:57:28 [error] [php] Cannot modify header information - headers already sent by (output started at /Library/WebServer/Documents/phonebook/protected/controllers/UserController.php:2) (/Library/WebServer/Documents/yii/framework/web/CHttpRequest.php:803)
+Stack trace:
+#0 /Library/WebServer/Documents/yii/framework/web/auth/CAccessControlFilter.php(180): CWebUser->loginRequired()
+#1 /Library/WebServer/Documents/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied()
+#2 /Library/WebServer/Documents/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter()
+#3 /Library/WebServer/Documents/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#4 /Library/WebServer/Documents/yii/framework/web/filters/CInlineFilter.php(58): UserController->filterAccessControl()
+#5 /Library/WebServer/Documents/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#6 /Library/WebServer/Documents/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /Library/WebServer/Documents/yii/framework/web/CController.php(265): UserController->runActionWithFilters()
+#8 /Library/WebServer/Documents/yii/framework/web/CWebApplication.php(282): UserController->run()
+#9 /Library/WebServer/Documents/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Library/WebServer/Documents/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /Library/WebServer/Documents/phonebook/index.php(13): CWebApplication->run()
+REQUEST_URI=/phonebook/index.php?r=user/admin
+in /Library/WebServer/Documents/phonebook/index.php (13)
+2018/09/07 20:58:31 [error] [php] Cannot modify header information - headers already sent by (output started at /Library/WebServer/Documents/phonebook/protected/controllers/UserController.php:2) (/Library/WebServer/Documents/yii/framework/web/CHttpRequest.php:803)
+Stack trace:
+#0 /Library/WebServer/Documents/yii/framework/web/auth/CAccessControlFilter.php(180): CWebUser->loginRequired()
+#1 /Library/WebServer/Documents/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied()
+#2 /Library/WebServer/Documents/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter()
+#3 /Library/WebServer/Documents/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#4 /Library/WebServer/Documents/yii/framework/web/filters/CInlineFilter.php(58): UserController->filterAccessControl()
+#5 /Library/WebServer/Documents/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#6 /Library/WebServer/Documents/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /Library/WebServer/Documents/yii/framework/web/CController.php(265): UserController->runActionWithFilters()
+#8 /Library/WebServer/Documents/yii/framework/web/CWebApplication.php(282): UserController->run()
+#9 /Library/WebServer/Documents/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Library/WebServer/Documents/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /Library/WebServer/Documents/phonebook/index.php(13): CWebApplication->run()
+REQUEST_URI=/phonebook/index.php?r=user/admin
+in /Library/WebServer/Documents/phonebook/index.php (13)
